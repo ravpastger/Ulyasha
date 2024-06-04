@@ -52,12 +52,14 @@ body{
     justify-content: center; /*центрируем элемент по горизонтали */
     align-items: center;
   }
-  .gallery-cell img{
+  .gallery .gallery-cell img{
     display:flex;
     justify-content: center; /*центрируем элемент по горизонтали */
     align-items: center; /* и вертикали */
-    padding: 5%;
-    height: 90%;
+    padding: 10px;
+    height: 90%;  
+    border-radius: 20px;
+    overflow: hidden;   
 }
 
 .transition, ul li i:before, ul li i:after, p {
@@ -160,6 +162,30 @@ body{
     transform: translate(-2px, 0) rotate(-45deg);
   }
   
+.stories { 
+    display: flex;
+    flex-direction: column;
+}
+.stories .story{
+    background-color: rgb(253, 248, 145);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 20%;
+    border-radius: 15px;
+    width: 60%;
+    align-items: center;
+}
+.stories .story img{
+    max-width: 50%; 
+    border-radius: 10px;
+    overflow: hidden;   
+}
+.stories .story h2{
+    max-width: 50%;
+    word-wrap:break-word;
+}
   
   
   
